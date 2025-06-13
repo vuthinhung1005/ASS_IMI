@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Clothing Shop</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+
+
+
+    <nav class="navbar">
+        <h1>NHUNG</h1>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <div class="dropdown">
+                <a href="/product.html" class="dropdown-toggle">Products</a>
+                <div class="dropdown-menu">
+                    <a href="/product-aodai.html">Áo Dài</a>
+                    <a href="/product-dress.html">Dress</a>
+                    <a href="/product-tshirt.html">T-shirt</a>
+                    <a href="/product-skirt.html">Skirt</a>
+                    <a href="/product-shirt.html">Shirt</a>
+                </div>
+            </div>
+
+            <a href="/contact.html">Contact</a>
+            <a href="/about.html">Blog</a>
+        </div>
+        <div class="nav-icons">
+            <a href="#" title="Search">🔍</a>
+            <a href="#" title="Cart">🛒</a>
+            <a href="/login.html" title="Account">|LOGIN </a>
+        </div>
+    </nav>
+
+    <section class="blog">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-posts">
+            <article class="blog-post">
+                <img src="./IMG/product1.webp" alt="">
+                <h3>Fashion Trends 2025</h3>
+                <p>Discover the latest fashion trends that are set to dominate in 2025. From vibrant colors to
+                    sustainable fabrics, find out what to expect this year.</p>
+                <a href="#">Read more</a>
+            </article>
+
+            <article class="blog-post">
+                <img src="./IMG/product1.webp" alt="">
+                <h3>How to Style Your Outfit</h3>
+                <p>Learn how to style your outfits with our expert tips. Whether it's for a casual day out or a formal
+                    event, we've got you covered.</p>
+                <a href="#">Read more</a>
+            </article>
+
+            <article class="blog-post">
+                <img src="./IMG/product1.webp" alt="">
+                <h3>Sustainable Fashion Choices</h3>
+                <p>Explore the importance of sustainable fashion and how you can make eco-friendly choices in your
+                    wardrobe.</p>
+                <a href="#">Read more</a>
+            </article>
+        </div>
+    </section>
+  <section class="blog">
+        <h2>Blog Archive</h2>
+        <div class="blog-video">
+            <video controls autoplay muted loop>
+                <source src="./VIDEO/video2.mp4" type="video/mp4" >
+                Your browser does not support the video tag.
+            </video>
+           
+        </div>
+        </section>
+
+
+
+<button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">↑</button>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>About Us</h2>
+                <div class="logo">
+                    <h1>NHUNG</h1>
+                </div>
+                <p>Register: <a href="mailto:nhungfashionista2601@gmail.com">nhungfashionista2601@gmail.com</a></p>
+                <input type="email" placeholder="Enter your email" />
+                <button type="button">Subscribe</button>
+            </div>
+
+            <div class="footer-section">
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">PAYMENT INFORMATION</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Contact Information</h2>
+                <p>NHUNG BUSINESS</p>
+                <p>Address: 100 TRAN QUANG DIEU, WARD 14, DISTRICT 3.</p>
+                <p>Tax code: 8269176533</p>
+                <p>Issued date: 13/5/2015</p>
+                <p>Issued by: HCMC.D3</p>
+                <p>Phone: <strong>0906996700</strong></p>
+                <p>Email: <a href="mailto:hello@nhung.com.vn">hello@nhung.com.vn</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h2>Contact</h2>
+                <p><a href="#">Link to </a></p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com" target="_blank"><img src="/IMG/fb.png" alt="Facebook" /></a>
+                    <a href="https://shopee.vn" target="_blank"><img src="/IMG/shopee.png" alt="Shopee" /></a>
+                    <a href="mailto:nhungfashionista2601@gmail.com"><img src="/img/mail.png" alt="Email" /></a>
+                    <a href="https://www.tiktok.com" target="_blank"><img src="/IMG//tik tok.png" alt="TikTok" /></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>Copyright © 2025 Nhung.</p>
+        </div>
+    </footer>
+
+</body>
+<script>
+  // Hiển thị nút khi cuộn xuống 200px
+  window.onscroll = function() {
+    const btn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Cuộn mượt về đầu trang
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
+</html>

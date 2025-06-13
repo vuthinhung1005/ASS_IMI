@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - NHUNG</title>
+    <link rel="stylesheet" href="CSS/contact.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar">
+        <h1>NHUNG</h1>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/product.html">Products</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/about.html">Blog</a>
+        </div>
+        <div class="nav-icons">
+            <a href="#">🔍</a>
+            <a href="#">🛒</a>
+            <a href="login.html">|LOGIN </a>
+                
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-container">
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1419031901845!2d106.68114427590263!3d10.800469058784298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175292aa68e27fd%3A0x62ec80fda6892050!2zMTAwIFRy4bqnbiBRdWFuZyBEaeG7hW8sIFBoxrDhu51uZyAxNCwgUXXhuq1uIDMsIEjDoCBO4buZaSBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2sus!4v1717666679999!5m2!1sen!2sus"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+
+        <div class="contact-form">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Address: 100 Trần Quang Diệu, P14, Q3</p>
+                <p>Email: nhungfashionista2601@gmail.com</p>
+                <p>Phone: 0906996700</p>
+                <p>Working Hours: 9:00 - 22:00 (Every day)</p>
+            </div>
+            <h2>Send Us a Message</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <input type="tel" placeholder="Your Phone Number" />
+                <textarea rows="5" placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Google Map -->
+
+<button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">↑</button>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>About Us</h2>
+                <div class="logo">
+                    <h1>NHUNG</h1>
+                </div>
+                <p>Register: <a href="mailto:nhungfashionista2601@gmail.com">nhungfashionista2601@gmail.com</a></p>
+                <input type="email" placeholder="Enter your email" />
+                <button type="button">Subscribe</button>
+            </div>
+            <div class="footer-section">
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Contact Information</h2>
+                <p>NHUNG BUSINESS</p>
+                <p>Address: 100 TRAN QUANG DIEU, WARD 14, DISTRICT 3.</p>
+                <p>Tax code: 8269176533</p>
+                <p>Issued date: 13/5/2015</p>
+                <p>Phone: <strong>0906996700</strong></p>
+                <p>Email: <a href="mailto:hello@nhung.com.vn">hello@nhung.com.vn</a></p>
+            </div>
+            <div class="footer-section">
+                <h2>Contact</h2>
+                <p><a href="#">Link to </a></p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com" target="_blank"><img src="/IMG/fb.png"
+                            alt="Facebook" /></a>
+                    <a href="https://shopee.vn" target="_blank"><img src="/IMG/shopee.png" alt="Shopee" /></a>
+                    <a href="mailto:nhungfashionista2601@gmail.com"><img src="/img/mail.png" alt="Email" /></a>
+                    <a href="https://www.tiktok.com" target="_blank"><img src="/IMG//tik tok.png"
+                            alt="TikTok" /></a>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+            <p>Copyright © 2025 Nhung.</p>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Your message has been sent!');
+            this.reset();
+        });
+    </script>
+    <script>
+  // Hiển thị nút khi cuộn xuống 200px
+  window.onscroll = function() {
+    const btn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Cuộn mượt về đầu trang
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
+</body>
+
+</html>
