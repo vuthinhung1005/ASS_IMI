@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const banner = document.getElementById('banner');
     const dotsContainer = document.querySelector('.banner-dots');
     const bannerImages = [
-        '/IMG/banner1.webp',
-        '/IMG/banner2.webp',
-        '/IMG/banner3.webp',
-        '/IMG/banner4.webp',
+        './IMG/banner1.webp',
+        './IMG/banner2.webp',
+        './IMG/banner3.webp',
+        './IMG/banner4.webp',
     ];
     let currentImageIndex = 0;
     let slideshowInterval;
